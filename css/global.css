@@ -1,0 +1,98 @@
+/* global.css */
+
+/* 기본 스타일 초기화 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+dt {
+    margin: 0;
+    padding: 0;
+}
+
+/* 리스트 스타일 제거 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 링크 스타일 초기화 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 인라인 요소 기본 스타일 제거 */
+strong,
+em,
+abbr,
+cite,
+dfn,
+address,
+time,
+var,
+code,
+kbd,
+samp,
+pre,
+small {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* 헤더, 프레임, 목록 요소 기본 스타일 제거 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+body,
+figure,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* 입력 요소의 기본 스타일 제거 */
+input,
+button,
+textarea,
+select,
+optgroup,
+option,
+fieldset {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+/* 버튼 스타일 초기화 */
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* 기본 폰트 설정 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 박스 모델 보더와 패딩 제거 */
+* {
+    box-sizing: border-box;
+}
+
+/* 추가적인 스타일 및 레이아웃을 여기에 추가할 수 있습니다. */
