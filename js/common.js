@@ -1,7 +1,9 @@
 $(function () {
-  $('.header__btn_').click(function () {
-    alert('Hello World!');
-  })
+  $('.e-header__btn_close').click(function () {
+    alert('hit');
+  });
 
-  // 추가 작성
+  $('.e-header__btn-menu').click(function () {
+    alert('hit');
+  });
 });
