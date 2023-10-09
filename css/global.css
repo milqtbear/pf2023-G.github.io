@@ -1,4 +1,33 @@
 /* global.css */
+/* 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
+        format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* 기본 스타일 초기화 */
 body,
@@ -85,11 +114,6 @@ button {
     padding: 0;
 }
 
-/* 기본 폰트 설정 */
-body {
-    font-family: Arial, sans-serif;
-}
-
 /* 박스 모델 보더와 패딩 제거 */
 * {
     box-sizing: border-box;
@@ -113,6 +137,8 @@ body {
     max-width: 768px;
 
     margin: 0 auto;
+
+    font-family: 'Prentendard', sans-serif;
 }
 
 header {
