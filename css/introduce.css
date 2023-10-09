@@ -1,0 +1,31 @@
+.introduce__wrapper {
+    display: flex;
+    padding: 24px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.introduce__text {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4375rem; /* 143.75% */
+    letter-spacing: -0.00625rem;
+}
+
+.introduce__btn {
+    display: flex;
+    flex:100%
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+}
+.introduce__common-btn {
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
