@@ -1,0 +1,7 @@
+.detail__main-img-wrapper {
+    display: flex;
+}
+
+.detail__main-img {
+    width: 100px;
+}
