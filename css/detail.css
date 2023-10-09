@@ -1,5 +1,29 @@
-.detail__main-img-wrapper {
+.detail__introduce {
+    padding: 12px 24px;
     display: flex;
+    flex-flow: column nowrap;
+    row-gap: 8px; 
+}
+
+.detail__main-img-container {
+    display: flex;
+    /* Frame 12 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 10px;
+
+
+}
+
+.detail__main-img-wrapper {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center; // row에서 가운데정렬
 }
 
 .detail__main-img {
