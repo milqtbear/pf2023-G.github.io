@@ -17,7 +17,7 @@
 
 .introduce__btn {
     display: flex;
-    flex:100%
+    flex:100%;
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
