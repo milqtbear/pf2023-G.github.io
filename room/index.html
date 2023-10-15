@@ -2,10 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./../css/global.css" rel="stylesheet" type="text/css"/>
+    <link href="./../css/room.css" rel="stylesheet" type="text/css"/>
+    <title>연구자의 방</title>
 </head>
 <body>
-    
+<header>
+    <nav class="header__container">
+        <button type="button" class="header__btn-close e-header__btn-close" disabled>
+            <img src="./../icons/icon-clear.svg" alt="지도 이동"/>
+        </button>
+        <h1 class="header__title">연구자의 방</h1>
+        <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
+            <img src="./../icons/icon-menu-hamburger.svg" alt="메뉴"/>
+        </button>
+    </nav>
+    <aside class="header__drawer-container e-header__drawer-container hidden" aria-hidden="true">
+        <div class="header__drawer">
+            <div class="header__drawer-header">
+                <button type="button" class="header__btn-aside-close e-header__btn-aside-close">
+                    <img src="./../icons/icon-clear.svg" alt="메뉴 닫기"/>
+                </button>
+            </div>
+            <ul class="header__drawer-list">
+                <li class="header__drawer-list-item"><a href="./../introduce/index.html">전시 소개</a></li>
+                <li class="header__drawer-list-item"><a href="./../map/index.html">전시 동선</a></li>
+                <li class="header__drawer-list-item"><a href="./../timeline/202310.html">도슨트 시간표</a></li>
+                <li class="header__drawer-list-item"><a href="./../room/index.html">연구자의 방</a></li>
+                <li class="header__drawer-list-item"><a href="#">설문조사</a></li>
+            </ul>
+            <section class="header__drawer-introduce">
+                <dl>
+                    <div>
+                        <dt class="visually-hidden">주최</dt>
+                        <dd class="header__introduce-host">경기도미술관</dd>
+                    </div>
+                    <div>
+                        <dt class="visually-hidden">주소</dt>
+                        <dd class="header__introduce-address">15385 경기도 안산시 단원구 동산로 268</dd>
+                    </div>
+                    <div>
+                        <dt>관람시간</dt>
+                        <dd>오전 10시 ~ 오후 6시</dd>
+                    </div>
+                    <div>
+                        <dt>관람종료</dt>
+                        <dd>한 시간 전까지 입장</dd>
+                    </div>
+                    <div>
+                        <dt>휴관일</dt>
+                        <dd>매주 월요일 (1월 1일과 설날, 추석 당일)</dd>
+                    </div>
+                    <div>
+                        <dt>관람료</dt>
+                        <dd>무료</dd>
+                    </div>
+                    <div class="header__cs-container">
+                        <dt class="header__cs-title">관람문의</dt>
+                        <dd class="header__cs-description">
+                            T. +82 31 481 7000
+                        </dd>
+                        <dd class="header__cs-description">
+                            F. +82 31 481 7053
+                        </dd>
+                    </div>
+                </dl>
+                <div class="header__direct-links">
+                    <a href="https://gmoma.ggcf.kr/" target="_blank" aria-label="경기도미술관 바로가기">
+                        <img src="./../icons/icon-gmoma.svg" alt="경기도미술관"/>
+                    </a>
+                    <a href="https://www.instagram.com/gyeonggimoma/" target="_blank" aria-label="인스타그램 바로가기">
+                        <img src="./../icons/icon-instagram.svg" alt="인스타그램"/>
+                    </a>
+                    <a href="https://www.facebook.com/ggmoma/" target="_blank" aria-label="페이스북 바로가기">
+                        <img src="./../icons/icon-facebook.svg" alt="페이스북"/>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+    </aside>
+</header>
+<main>
+    <section>
+        <p>
+            《지도와 영토》에서는 공성훈, 김건희, 김정헌, 민정기, 정재철의 작업 세계를 심층적으로 연구하는 〈연구자의 방-지도 프로젝트〉를 선보입니다. 지도 프로젝트는 다섯 연구자의 참여로
+            이루어졌습니다. 연구자의 방은 그들의 연구를 강연, 글 그리고 연구하며 참고한 다양한 자료를 살펴볼 수 있도록 구성하였습니다. 이 프로젝트는 정재철-민정기-김건희-공성훈-김정헌 순으로
+            진행됩니다. 강연에 관한 정보는 향후 경기도미술관 홈페이지와 SNS를 참고해 주세요.
+        </p>
+    </section>
+    <section>
+        <ul class="room__items e-room__items">
+            <li>
+                <div>
+                    <h2 class="room__item-painter"></h2>
+                    <div>
+                        <div class="room__badge-state"></div>
+                        <span class="room__date-range"></span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="room__item-time"></span>
+                        <span class="room__item-title"></span>
+                    </div>
+                    <div>
+                        <span class="room__item-researcher-name"></span>
+                        <span class="room__item-researcher-job"></span>
+                    </div>
+                </div>
+                <button type="button">연구자 정보 더보기</button>
+                <div class="room__item-researcher-description hidden" aria-hidden="true">
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="./../js/common.js"></script>
+<script src="./../js/room.js"></script>
 </html>
