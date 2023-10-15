@@ -6,15 +6,16 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="./css/global.css" rel="stylesheet" type="text/css"/>
-        <title>경기도 미술관</title>
+        <link href="./css/home.css" rel="stylesheet" type="text/css"/>
+        <title>경기도미술관 지도와 영토</title>
     </head>
     <body>
         <header>
-            <nav class="header__container">
+            <nav class="header__container transparent ">
                 <button type="button" class="header__btn-close e-header__btn-close" disabled>
                     <img src="./icons/icon-clear.svg" alt="지도 이동"/>
                 </button>
-                <h1 class="header__title">타이틀</h1>
+                <h1 class="header__title"> </h1>
                 <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
                     <img src="./icons/icon-menu-hamburger.svg" alt="메뉴"/>
                 </button>
@@ -85,14 +86,27 @@
 
             </aside>
         </header>
+        
 
-        <main>
-            <h1>경기도 미술관</h1>
-            <a href="./details/1.html">첫 번째 페이지로 이동</a>
-            <a href="./details/2.html">두 번째 페이지로 이동</a>
-            <div class="btn-sample">샘플 JavaScript</div>
+        <main class="no-padding">
+            <div class="home__artboard">
+                <img class="home__bg" src="./images/home_map.svg">
+                <img class="home__mapand" src="./images/home_text-mapand.svg">
+                <img class="home__territory" src="./images/home_text-territory.svg">
+                <img class="home__eng" src="./images/home_text-eng.svg">
+                <div class="home__date">
+                    <img  src="./images/home_text-date.svg">
+                    <img  src="./images/home_text-locate.svg">
+                </div>
+                <a class="btn-move" href="./introduce/index.html">
+                    <span class="home__btn-text">전시소개</span>
+                    <img src="./icons/icon-arrow-long.svg">
+                </a>
+            </div>
         </main>
     </body>
+
+
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
             integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="./js/common.js"></script>
