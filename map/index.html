@@ -7,8 +7,9 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="./../css/map.css" rel="stylesheet" type="text/css" />
 
-    <title>첫번째 페이지</title>
+    <title>전시 동선</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <button type="button" class="header__btn-close e-header__btn-close" disabled>
                 <img src="./../icons/icon-clear.svg" alt="지도 이동"/>
             </button>
-            <h1 class="header__title">타이틀</h1>
+            <h1 class="header__title">전시 동선</h1>
             <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
                 <img src="./../icons/icon-menu-hamburger.svg" alt="메뉴"/>
             </button>
@@ -89,7 +90,29 @@
         </aside>
     </header>
     <main>
-
+        <div class="map__main_img">
+            <img class="map__main_img_icon" src="./../icons/icon-map.svg " alt="전시동선">
+        </div>
+        <h2 class="map__lst-header">경기도미술관 소장품 리스트</h2>
+        <section>
+            <li class="map__common_all">
+                <section>
+                    <h3 class="map__common_painter">
+                        <span class="map__painter-num">1-14</span>
+                        정재철
+                    </h3>
+                    <ul>
+                        <li class="map__common_oeuvre">
+                            <sapn>1</sapn>
+                            <3차 실크로드 프로젝트 루트맵드로잉>
+                        </li>
+                    </ul>
+                </section>
+                <button class="circle">
+                    <img src="./../icons/icon-chevron-right-bl.svg">
+                </button>
+            </li>
+        </section> 
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"

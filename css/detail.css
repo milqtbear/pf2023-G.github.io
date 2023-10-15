@@ -24,7 +24,7 @@
 
 .detail__main-img-wrapper {
     flex-grow: 1;
-    height: 144px;
+    height: 152px;
     display: flex;
     justify-content: center; /* row에서 가운데정렬 */
 }

@@ -1,0 +1,70 @@
+.map__main_img {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__main_img_icon {
+    max-width: 100%;
+}
+
+.map__lst-header {
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: -0.5px;
+}
+
+.map__common_all {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map__common_pno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.map__painter-num {
+    color: #FA85BB;
+}
+
+.map__common_painter {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem; /* 150% */
+    letter-spacing: -0.03125rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.map__common_oeuvre {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3125rem; /* 150% */
+    letter-spacing: -0.03125rem;
+    display: flex;
+    padding: 0px 36px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background-color: #FE9BC9;
+    border-radius: 50%;
+    flex-shrink: 0
+}
