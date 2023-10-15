@@ -1,0 +1,26 @@
+.timeline__month-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn:disabled {
+    opacity: 0;
+}
+
+.timeline__month-text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+}
+
+.timeline__schedule {
+    display: flex;
+    padding: 12px 24px;
+    flex-direction: column;
+    align-items: center;
+}
