@@ -74,18 +74,11 @@ const changeButtonDisabled = (currentIndex, images) => {
   const $prev = $('.e-detail__icon-prev-image');
   const $next = $('.e-detail__icon-next-image');
 
-  if (currentIndex === 0) {
-    $prev.prop('disabled', true);
-  }
+  const hasPrev = currentIndex > 0;
+  const hasNext = currentIndex !== images.length -1;
 
-  if (currentIndex === images.length - 1) {
-    $next.prop('disabled', true);
-  }
-
-  if (currentIndex > 0 && currentIndex < images.length - 1) {
-    $prev.prop('disabled', false);
-    $next.prop('disabled', false);
-  }
+  $prev.prop('disabled', !hasPrev);
+  $next.prop('disabled', !hasNext);
 }
 
 const changeContent = (currentIndex, images) => {
