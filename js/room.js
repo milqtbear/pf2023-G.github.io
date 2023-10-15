@@ -1,6 +1,14 @@
 $(() => {
   T_Content();
 
+  $('.e-room__item-btn-researcher').click((e) => {
+    console.log('hi');
+    console.log($(e.target));
+    const name = $(e.target).data('researcher');
+
+    $(`.e-room__item-researcher-description[data-researcher=${name}]`).toggleClass('hidden');
+  });
+
 
   // 추가 작성
 });
@@ -28,8 +36,8 @@ const T_Content = () => {
                   <span class="room__item-researcher-job">${item.researcher.job}</span>
               </div>
           </div>
-          <button type="button">연구자 정보 더보기</button>
-          <div class="room__item-researcher-description hidden" aria-hidden="true">${item.researcher.description}</div>
+          <button type="button" class="room__item-btn-researcher e-room__item-btn-researcher" data-researcher="${item.researcher.name}">연구자 정보 더보기</button>
+          <div class="room__item-researcher-description e-room__item-researcher-description hidden" aria-hidden="true" data-researcher="${item.researcher.name}">${item.researcher.description}</div>
       </li>`
     );
   });
@@ -44,8 +52,9 @@ const T_StateBadge = (dateRange) => {
 
   const state = startDate > today ? 'expected' : endDate < today ? 'end' : 'ongoing';
 
-  return `<div class="room__badge-state ${STATE[state].class}">${STATE[state].text}</div>`
+  return `<div class="room__badge-state ${STATE[state].class}">${STATE[state].text}</div>`;
 }
+
 
 const STATE = {
   expected: {
@@ -98,7 +107,7 @@ const CONTENTS = [
     title: '꽃그늘 찾아가는 여행기',
     time: '9월 19일 14:30',
     researcher: {
-      name: '이소요',
+      name: '민정기2',
       job: '미술 작가',
       description: '이소요는 사람과 함께 해 온 생물의 문화사를 다루는 미술작가이다. 인간 활동으로 교란되는 환경에도 다양한 생태적 틈새와 삶의 가능성이 있다는 점에 주목하며, 작가가 직접 수행하는 현장 조사와 재료 실험을 주된 창작 과정으로 여긴다. 렌슬리어 공과대학에서 예술·과학사 학제간 연구로 박사학위를 받았고 경기도미술관, 국립현대미술관, 서울시립미술관, 백남준아트센터, 호주현대미술관 등에서 전시했다.'
     }
@@ -109,7 +118,7 @@ const CONTENTS = [
     title: '꽃그늘 찾아가는 여행기',
     time: '9월 19일 14:30',
     researcher: {
-      name: '이소요',
+      name: '김건희2',
       job: '미술 작가',
       description: '이소요는 사람과 함께 해 온 생물의 문화사를 다루는 미술작가이다. 인간 활동으로 교란되는 환경에도 다양한 생태적 틈새와 삶의 가능성이 있다는 점에 주목하며, 작가가 직접 수행하는 현장 조사와 재료 실험을 주된 창작 과정으로 여긴다. 렌슬리어 공과대학에서 예술·과학사 학제간 연구로 박사학위를 받았고 경기도미술관, 국립현대미술관, 서울시립미술관, 백남준아트센터, 호주현대미술관 등에서 전시했다.'
     }
@@ -120,7 +129,7 @@ const CONTENTS = [
     title: '꽃그늘 찾아가는 여행기',
     time: '9월 19일 14:30',
     researcher: {
-      name: '이소요',
+      name: '공성훈2',
       job: '미술 작가',
       description: '이소요는 사람과 함께 해 온 생물의 문화사를 다루는 미술작가이다. 인간 활동으로 교란되는 환경에도 다양한 생태적 틈새와 삶의 가능성이 있다는 점에 주목하며, 작가가 직접 수행하는 현장 조사와 재료 실험을 주된 창작 과정으로 여긴다. 렌슬리어 공과대학에서 예술·과학사 학제간 연구로 박사학위를 받았고 경기도미술관, 국립현대미술관, 서울시립미술관, 백남준아트센터, 호주현대미술관 등에서 전시했다.'
     }
@@ -131,7 +140,7 @@ const CONTENTS = [
     title: '꽃그늘 찾아가는 여행기',
     time: '9월 19일 14:30',
     researcher: {
-      name: '이소요',
+      name: '김정헌2',
       job: '미술 작가',
       description: '이소요는 사람과 함께 해 온 생물의 문화사를 다루는 미술작가이다. 인간 활동으로 교란되는 환경에도 다양한 생태적 틈새와 삶의 가능성이 있다는 점에 주목하며, 작가가 직접 수행하는 현장 조사와 재료 실험을 주된 창작 과정으로 여긴다. 렌슬리어 공과대학에서 예술·과학사 학제간 연구로 박사학위를 받았고 경기도미술관, 국립현대미술관, 서울시립미술관, 백남준아트센터, 호주현대미술관 등에서 전시했다.'
     }
