@@ -22,6 +22,10 @@
     gap: 10px;
 }
 
+.detail__icon-chevron:disabled {
+    opacity: 0;
+}
+
 .detail__main-img-wrapper {
     flex-grow: 1;
     height: 152px;
