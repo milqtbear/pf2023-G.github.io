@@ -28,7 +28,7 @@
 
 .detail__main-img-wrapper {
     flex-grow: 1;
-    height: 152px;
+    height: 200px;
     display: flex;
     justify-content: center; /* row에서 가운데정렬 */
 }
@@ -55,6 +55,7 @@
     line-height: 1.4375rem; /* 143.75% */
     letter-spacing: -0.00625rem;
     padding: 10px 0px;
+    text-indent: 2em;
 }
 
 .detail__btn-wrapper {
@@ -95,4 +96,8 @@
     height: 38px;
     background-color: #FE9BC9;
     border-radius: 50%;
+}
+
+.detail__italic {
+    font-style: italic;
 }

@@ -100,8 +100,8 @@ const IMAGES = {
   'jung-jaechul': [
     {
       fileName: 'jjc-1.jpg',
-      title: '3차 실크로드 프로젝트 루트맵 드로잉',
-      description: '내용 추가 필요'
+      title: '〈3차 실크로드 프로젝트 루트맵 드로잉〉',
+      description: '2010, 장지에 아크릴 물감, 먹, 210×304cm, 경기도미술관 소장품'
     }
   ],
   'min-jungki': [
