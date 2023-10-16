@@ -121,18 +121,18 @@ const IMAGES = {
   'kim-jungheon': [
     {
       fileName: 'kjh-1.jpg',
-      title: '무지개 공장',
-      description: '내용 추가 필요'
+      title: '〈무지개 공장〉',
+      description: '1980(2019 부분 재제작), 캔버스에 유채, 신문 콜라주, 73.3×133.3cm, 경기도미술관 소장품'
     },
     {
       fileName: 'kjh-2.jpg',
-      title: '분노하는 농부',
-      description: '내용 추가 필요'
+      title: '〈분노하는 농부〉',
+      description: '1980, 신문에 아크릴 채색, 87×63.5cm, 경기도미술관 소장품'
     },
     {
       fileName: 'kjh-3.jpg',
-      title: '풍경 8',
-      description: '내용 추가 필요'
+      title: '〈풍경 8〉',
+      description: '1981, 캔버스에 유채, 72.5×61cm, 경기도미술관 소장품'
     },
   ],
   'kim-kunhee': [
