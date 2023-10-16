@@ -114,8 +114,8 @@ const IMAGES = {
   'gong-sunghoon': [
     {
       fileName: 'ksh-1.jpg',
-      title: '벽제의 밤 - 개',
-      description: '내용 추가 필요'
+      title: '〈벽제의 밤 - 개〉',
+      description: '2003, 캔버스에 아크릴 채색, 130×162cm, 경기도미술관 소장품'
     },
   ],
   'kim-jungheon': [
