@@ -107,8 +107,8 @@ const IMAGES = {
   'min-jungki': [
     {
       fileName: 'mjk-1.jpg',
-      title: '사람들의 연작',
-      description: '내용 추가 필요'
+      title: '『사람들』 묶음집 중 〈아침 노점에서〉',
+      description: '1988, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
     }
   ],
   'gong-sunghoon': [
