@@ -93,3 +93,26 @@ border-bottom: 1px solid var(--main_bl, #111);
     line-height: 1.125rem; /* 180% */
     letter-spacing: -0.5px;
 }
+
+@media (min-width: 600px) {
+    .list__painter {
+        font-size: 1.875rem;
+        line-height: 2.3125rem
+    }
+
+    .list__oeuvre-num {
+        font-size: 1.375rem;
+line-height: 1.8125rem;
+    }
+
+    .list__oeuvre-name {
+        font-size: 1.25rem;
+        line-height: 1.625rem
+    }
+
+    .list__oeuvre-des {
+        font-size: 1.125rem;
+line-height: 1.625rem;
+    }
+
+}
