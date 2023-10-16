@@ -111,14 +111,14 @@ const IMAGES = {
       description: '내용 추가 필요'
     }
   ],
-  'kong-sunghun': [
+  'gong-sunghoon': [
     {
       fileName: 'ksh-1.jpg',
       title: '벽제의 밤 - 개',
       description: '내용 추가 필요'
     },
   ],
-  'kim-junghun': [
+  'kim-jungheon': [
     {
       fileName: 'kjh-1.jpg',
       title: '무지개 공장',
