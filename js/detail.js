@@ -138,13 +138,13 @@ const IMAGES = {
   'kim-kunhee': [
     {
       fileName: 'kkh-1.jpg',
-      title: '얼얼덜덜 (1980)',
-      description: '내용 추가 필요'
+      title: '〈얼얼덜덜〉',
+      description: '1980, 종이에 실크스크린, 40.5×34.5cm, 경기도미술관 소장품'
     },
     {
       fileName: 'kkh-2.jpg',
-      title: '얼얼덜덜 (2010)',
-      description: '내용 추가 필요'
+      title: '〈얼얼덜덜〉',
+      description: '1980(2010년 복원), 종이에 실크스크린, 61.5×55.5cm, 경기도미술관 소장품'
     },
   ]
 };
