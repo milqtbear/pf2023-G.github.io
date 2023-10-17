@@ -37,7 +37,7 @@ const T_Content = () => {
           </div>
           <div class="room__item-btn-researcher-wrapper">
             <button type="button" class="room__item-btn-researcher e-room__item-btn-researcher" aria-expanded="false" aria-controls="researcher-description" data-researcher="${item.researcher.name}">
-              <img src="./../icons/icon-chevron-left.svg" class="room__item-btn-researcher-icon e-room__item-btn-researcher-icon">
+              <img src="icons/icon-chevron-left.svg" class="room__item-btn-researcher-icon e-room__item-btn-researcher-icon">
               연구자 정보 더보기
             </button>
           </div>

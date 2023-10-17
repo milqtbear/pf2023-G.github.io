@@ -3,556 +3,494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./../css/global.css" rel="stylesheet" type="text/css" />
-    <link href="./../css/list.css" rel="stylesheet" type="text/css" />
+    <base href="./../">
+    <link href="css/global.css" rel="stylesheet" type="text/css"/>
+    <link href="css/list.css" rel="stylesheet" type="text/css"/>
 
     <title>작품 목록</title>
 </head>
 <body>
-    <header>
-        <nav class="header__container">
-                <button type="button" class="header__btn-close e-header__btn-close">
-                    <img src="./../icons/icon-clear.svg" alt="지도 이동"/>
-                </button>
-                <h1 class="header__title">작품 목록</h1>
-                <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
-                    <img src="./../icons/icon-menu-hamburger.svg" alt="메뉴"/>
-                </button>
-            </nav>
-            <aside class="header__drawer-container e-header__drawer-container hidden" aria-hidden="true">
-                <div class="header__drawer">
-                    <div class="header__drawer-header">
-                        <button type="button" class="header__btn-aside-close e-header__btn-aside-close">
-                            <img src="./../icons/icon-clear.svg" alt="메뉴 닫기"/>
-                        </button>
+<header>
+    <nav class="header__container">
+        <button type="button" class="header__btn-close e-header__btn-close">
+            <img src="icons/icon-clear.svg" alt="지도 이동"/>
+        </button>
+        <h1 class="header__title">작품 목록</h1>
+        <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
+            <img src="icons/icon-menu-hamburger.svg" alt="메뉴"/>
+        </button>
+    </nav>
+    <aside class="header__drawer-container e-header__drawer-container aside-hidden" aria-hidden="true">
+    </aside>
+</header>
+
+<main>
+    <ul class="list__main-wrapper">
+        <li class="list__division-wrapper">
+            <div class="list__painter-wrapper">
+                <h3 class="list__painter">정재철</h3>
+            </div>
+            <ul>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">1</sapn>
                     </div>
-                    <ul class="header__drawer-list">
-                        <li class="header__drawer-list-item"><a href="./../introduce/index.html">전시 소개</a></li>
-                        <li class="header__drawer-list-item"><a href="./../map/index.html">전시 동선</a></li>
-                        <li class="header__drawer-list-item"><a href="./../timeline/202310.html">도슨트 시간표</a></li>
-                        <li class="header__drawer-list-item"><a href="./../room/index.html">연구자의 방</a></li>
-                        <li class="header__drawer-list-item"><a href="#">설문조사</a></li>
-                    </ul>
-                    <section class="header__drawer-introduce">
-                        <dl>
-                            <div>
-                                <dt class="visually-hidden">주최</dt>
-                                <dd class="header__introduce-host">경기도미술관</dd>
-                            </div>
-                            <div>
-                                <dt class="visually-hidden">주소</dt>
-                                <dd class="header__introduce-address">15385 경기도 안산시 단원구 동산로 268</dd>
-                            </div>
-                            <div>
-                                <dt>관람시간</dt>
-                                <dd>오전 10시 ~ 오후 6시</dd>
-                            </div>
-                            <div>
-                                <dt>관람종료</dt>
-                                <dd>한 시간 전까지 입장</dd>
-                            </div>
-                            <div>
-                                <dt>휴관일</dt>
-                                <dd>매주 월요일 (1월 1일과 설날, 추석 당일)</dd>
-                            </div>
-                            <div>
-                                <dt>관람료</dt>
-                                <dd>무료</dd>
-                            </div>
-                            <div class="header__cs-container">
-                                <dt class="header__cs-title">관람문의</dt>
-                                <dd class="header__cs-description">
-                                    T. +82 31 481 7000
-                                </dd>
-                                <dd class="header__cs-description">
-                                    F. +82 31 481 7053
-                                </dd>
-                            </div>
-                        </dl>
-                        <div class="header__direct-links">
-                            <a href="https://gmoma.ggcf.kr/" target="_blank" aria-label="경기도미술관 바로가기">
-                                <img src="./../icons/icon-gmoma.svg" alt="경기도미술관"/>
-                            </a>
-                            <a href="https://www.instagram.com/gyeonggimoma/" target="_blank" aria-label="인스타그램 바로가기">
-                                <img src="./../icons/icon-instagram.svg" alt="인스타그램"/>
-                            </a>
-                            <a href="https://www.facebook.com/ggmoma/" target="_blank" aria-label="페이스북 바로가기">
-                                <img src="./../icons/icon-facebook.svg" alt="페이스북"/>
-                            </a>
-                        </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name"><3차 실크로드 프로젝트 루트맵 드로잉></span>
+                        <span class="list__oeuvre-des">2010, 장지에 아크릴 물감, 먹, 210 x 304 cm, 경기도미술관 소장품</span>
                     </section>
-                </div>
-    
-            </aside>
-    </header>
-        
-    <main>
-        <ul class="list__main-wrapper">
-            <li class="list__division-wrapper">
-                <div class="list__painter-wrapper">
-                    <h3 class="list__painter">정재철</h3>
-                </div>
-                <ul>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">1</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name"><3차 실크로드 프로젝트 루트맵 드로잉></span>
-                            <span class="list__oeuvre-des">2010, 장지에 아크릴 물감, 먹, 210 x 304 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">2</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name"><광장></span>
-                            <span class="list__oeuvre-des">2010, 단채널비디오, 컬러, 사운드, 7분 18초, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">3</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
-                            <span class="list__oeuvre-des">2010, 단채널비디오, 컬러, 사운드, 33분 43초, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">4</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
-                            <span class="list__oeuvre-des">2011, 종이에 물감, 화첩, 23 × 32 × 1.5 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">5</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
-                            <span class="list__oeuvre-des">2011, 종이에 붓펜, 채색, 화첩, 20 × 28 × 2 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">6</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
-                            <span class="list__oeuvre-des">2010, 종이에 인장, 화첩, 8 × 11 × 1.8 cm, 유족소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">7</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트 기간 동안 작성한 작가 노트〉</span>
-                            <span class="list__oeuvre-des">2010, 2점, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">8</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈제목 미상〉</span>
-                            <span class="list__oeuvre-des">연도 미상, 지도에 펜, 28 × 41 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">9</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈제목 미상〉</span>
-                            <span class="list__oeuvre-des">연도 미상, 지도에 펜, 가변 크기, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">10</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈무제〉</span>
-                            <span class="list__oeuvre-des">2000, 나무박스, 수집풉, 27 × 27 × 7 cm, 6점, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">11</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">제목 미상 드로잉</span>
-                            <span class="list__oeuvre-des">연도 미정, 종이에 연필, 32 × 42 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">12</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈3차 실크로드 프로젝트 설치〉</span>
-                            <span class="list__oeuvre-des">2009, 폐현수막, 혼합재료 등, 가변크기, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">13</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈정물 1〉 〈정물 2〉 〈정물 3〉, 부분</span>
-                            <span class="list__oeuvre-des">2003, 나무, 가변크기, 2023 재설치, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">14</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">2003 김종영미술관 《나무로부터》 〈정물 1〉 〈정물 2〉 〈정물 3〉 관련 사진</span>
-                            <span class="list__oeuvre-des">유족 소장</span>
-                        </section>
-                    </li>
-                </ul>
-            </li>
-            
-            <li class="list__division-wrapper">
-                <div class="list__painter-wrapper">
-                    <h3 class="list__painter">김건희</h3>
-                </div>
-                <ul>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">15-1</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈얼얼덜덜〉</span>
-                            <span class="list__oeuvre-des">1980, 종이에 실크스크린, 40.5 x 34.5 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">15-2</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈얼얼덜덜〉</span>
-                            <span class="list__oeuvre-des">1980(2010년 복원), 종이에 실크스크린, 40.5 x 34.5 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">16</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈거리에서〉</span>
-                            <span class="list__oeuvre-des">1981, 종이에 실크스크린, 74 x 52 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">17</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈소리〉</span>
-                            <span class="list__oeuvre-des">1987, 종이에 실크스크린, 74 x 52 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">18</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈팸플릿 인물도〉</span>
-                            <span class="list__oeuvre-des">1987, 캔버스에 실크스크린, 아크릴 채색, 136 × 140 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">19</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈드로잉 습작-1〉</span>
-                            <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">20</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈드로잉 습작-2〉</span>
-                            <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">21</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈드로잉 습작-3〉</span>
-                            <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">22</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈드로잉 습작-4〉</span>
-                            <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">23</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈드로잉 습작-5〉</span>
-                            <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                </ul>
-            </li>
-            
-            <li class="list__division-wrapper">
-                <div class="list__painter-wrapper">
-                    <h3 class="list__painter">공성훈</h3>
-                </div>
-                <ul>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">24</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈벽제의 밤-개〉</span>
-                            <span class="list__oeuvre-des">2003, 캔버스에 아크릴 채색, 130 × 162 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">25</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈개〉</span>
-                            <span class="list__oeuvre-des">2000, 캔버스에 유채, 130.3 × 182.2 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">26</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈개〉</span>
-                            <span class="list__oeuvre-des">2001, 캔버스에 유채, 112.1 × 145.2 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">27</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈불타는 밤〉</span>
-                            <span class="list__oeuvre-des">2001, 캔버스에 유채, 130.3 × 162.2 cm, 유족 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">28</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">공성훈 〈개떼〉, 〈랄랄랄〉 영상 DV 8mm</span>
-                            <span class="list__oeuvre-des">1999-2000(추정), 국립현대미술관 미술연구센터, 변지은·공서린 기증</span>
-                        </section>
-                    </li>
-                </ul>
-            </li>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">2</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name"><광장></span>
+                        <span class="list__oeuvre-des">2010, 단채널비디오, 컬러, 사운드, 7분 18초, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">3</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
+                        <span class="list__oeuvre-des">2010, 단채널비디오, 컬러, 사운드, 33분 43초, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">4</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
+                        <span class="list__oeuvre-des">2011, 종이에 물감, 화첩, 23 × 32 × 1.5 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">5</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
+                        <span class="list__oeuvre-des">2011, 종이에 붓펜, 채색, 화첩, 20 × 28 × 2 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">6</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트〉</span>
+                        <span class="list__oeuvre-des">2010, 종이에 인장, 화첩, 8 × 11 × 1.8 cm, 유족소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">7</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트 기간 동안 작성한 작가 노트〉</span>
+                        <span class="list__oeuvre-des">2010, 2점, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">8</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈제목 미상〉</span>
+                        <span class="list__oeuvre-des">연도 미상, 지도에 펜, 28 × 41 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">9</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈제목 미상〉</span>
+                        <span class="list__oeuvre-des">연도 미상, 지도에 펜, 가변 크기, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">10</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈무제〉</span>
+                        <span class="list__oeuvre-des">2000, 나무박스, 수집풉, 27 × 27 × 7 cm, 6점, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">11</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">제목 미상 드로잉</span>
+                        <span class="list__oeuvre-des">연도 미정, 종이에 연필, 32 × 42 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">12</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈3차 실크로드 프로젝트 설치〉</span>
+                        <span class="list__oeuvre-des">2009, 폐현수막, 혼합재료 등, 가변크기, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">13</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈정물 1〉 〈정물 2〉 〈정물 3〉, 부분</span>
+                        <span class="list__oeuvre-des">2003, 나무, 가변크기, 2023 재설치, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">14</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">2003 김종영미술관 《나무로부터》 〈정물 1〉 〈정물 2〉 〈정물 3〉 관련 사진</span>
+                        <span class="list__oeuvre-des">유족 소장</span>
+                    </section>
+                </li>
+            </ul>
+        </li>
 
-            <li class="list__division-wrapper">
-                <div class="list__painter-wrapper">
-                    <h3 class="list__painter">김정헌</h3>
-                </div>
-                <ul>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">29</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈무지개 공장〉</span>
-                            <span class="list__oeuvre-des">1980(2019 부분 재제작), 캔버스에 유채, 신문 콜라주, 73.3 × 133.3 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">30</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈분노하는 농부〉</span>
-                            <span class="list__oeuvre-des">1980, 신문에 아크릴 채색, 87 × 63.5 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">31</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈풍경 8〉</span>
-                            <span class="list__oeuvre-des">1981, 캔버스에 유채, 72.5 × 61 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">32</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈어느 농부의 삶〉</span>
-                            <span class="list__oeuvre-des">1987(2017 부분 재제작), 캔버스에 아크릴 채색, 99 × 69.5 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">33</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">〈후레쉬 민트는 모든 것을 녹색으로 보이게 한다 - 6·25의 기억〉</span>
-                            <span class="list__oeuvre-des">1984, 캔버스에 아크릴 채색, 140 × 200 cm, 작가 소장</span>
-                        </section>
-                    </li>
-                </ul>
-            </li>
+        <li class="list__division-wrapper">
+            <div class="list__painter-wrapper">
+                <h3 class="list__painter">김건희</h3>
+            </div>
+            <ul>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">15-1</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈얼얼덜덜〉</span>
+                        <span class="list__oeuvre-des">1980, 종이에 실크스크린, 40.5 x 34.5 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">15-2</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈얼얼덜덜〉</span>
+                        <span class="list__oeuvre-des">1980(2010년 복원), 종이에 실크스크린, 40.5 x 34.5 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">16</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈거리에서〉</span>
+                        <span class="list__oeuvre-des">1981, 종이에 실크스크린, 74 x 52 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">17</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈소리〉</span>
+                        <span class="list__oeuvre-des">1987, 종이에 실크스크린, 74 x 52 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">18</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈팸플릿 인물도〉</span>
+                        <span class="list__oeuvre-des">1987, 캔버스에 실크스크린, 아크릴 채색, 136 × 140 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">19</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈드로잉 습작-1〉</span>
+                        <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">20</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈드로잉 습작-2〉</span>
+                        <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">21</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈드로잉 습작-3〉</span>
+                        <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">22</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈드로잉 습작-4〉</span>
+                        <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">23</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈드로잉 습작-5〉</span>
+                        <span class="list__oeuvre-des">1965, 종이에 연필, 51 × 41 cm, 작가 소장</span>
+                    </section>
+                </li>
+            </ul>
+        </li>
 
-            <li class="list__division-wrapper">
-                <div class="list__painter-wrapper">
-                    <h3 class="list__painter">민정기</h3>
-                </div>
-                <ul>
-                    <li class="list__oeuvre-collection">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">34</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 묶음집</span>
-                            <span class="list__oeuvre-des">1983-1989, 에칭, 에쿼틴트, 63 × 53.5 cm, 경기도미술관 소장품</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">35</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈개울〉</span>
-                            <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">36</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈이른봄 저녁〉</span>
-                            <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">37</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈아침 노점에서〉</span>
-                            <span class="list__oeuvre-des">1988, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">38</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈세수〉</span>
-                            <span class="list__oeuvre-des">1987, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">39</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈개인택시〉</span>
-                            <span class="list__oeuvre-des">1985, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">40</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈지하철〉</span>
-                            <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">41</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈대화(터놓고 이야기해서)〉</span>
-                            <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">42</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈과일장수〉</span>
-                            <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">43</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈일터를 찾아서〉</span>
-                            <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">44</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈시속 40km〉</span>
-                            <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    <li class="list__oeuvre-normal">
-                        <div class="list__num-wrapper">
-                            <sapn class="list__oeuvre-num">45</sapn>
-                        </div>
-                        <section class="list__oeuvre-wrapper">
-                            <span class="list__oeuvre-name">『사람들』 중 〈문〉</span>
-                            <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
-                        </section>
-                    </li>
-                    
-                </ul>
-            </li>
+        <li class="list__division-wrapper">
+            <div class="list__painter-wrapper">
+                <h3 class="list__painter">공성훈</h3>
+            </div>
+            <ul>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">24</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈벽제의 밤-개〉</span>
+                        <span class="list__oeuvre-des">2003, 캔버스에 아크릴 채색, 130 × 162 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">25</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈개〉</span>
+                        <span class="list__oeuvre-des">2000, 캔버스에 유채, 130.3 × 182.2 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">26</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈개〉</span>
+                        <span class="list__oeuvre-des">2001, 캔버스에 유채, 112.1 × 145.2 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">27</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈불타는 밤〉</span>
+                        <span class="list__oeuvre-des">2001, 캔버스에 유채, 130.3 × 162.2 cm, 유족 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">28</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">공성훈 〈개떼〉, 〈랄랄랄〉 영상 DV 8mm</span>
+                        <span class="list__oeuvre-des">1999-2000(추정), 국립현대미술관 미술연구센터, 변지은·공서린 기증</span>
+                    </section>
+                </li>
+            </ul>
+        </li>
 
-        </ul>
-    </main>
-    
+        <li class="list__division-wrapper">
+            <div class="list__painter-wrapper">
+                <h3 class="list__painter">김정헌</h3>
+            </div>
+            <ul>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">29</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈무지개 공장〉</span>
+                        <span class="list__oeuvre-des">1980(2019 부분 재제작), 캔버스에 유채, 신문 콜라주, 73.3 × 133.3 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">30</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈분노하는 농부〉</span>
+                        <span class="list__oeuvre-des">1980, 신문에 아크릴 채색, 87 × 63.5 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">31</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈풍경 8〉</span>
+                        <span class="list__oeuvre-des">1981, 캔버스에 유채, 72.5 × 61 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">32</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈어느 농부의 삶〉</span>
+                        <span class="list__oeuvre-des">1987(2017 부분 재제작), 캔버스에 아크릴 채색, 99 × 69.5 cm, 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">33</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">〈후레쉬 민트는 모든 것을 녹색으로 보이게 한다 - 6·25의 기억〉</span>
+                        <span class="list__oeuvre-des">1984, 캔버스에 아크릴 채색, 140 × 200 cm, 작가 소장</span>
+                    </section>
+                </li>
+            </ul>
+        </li>
+
+        <li class="list__division-wrapper">
+            <div class="list__painter-wrapper">
+                <h3 class="list__painter">민정기</h3>
+            </div>
+            <ul>
+                <li class="list__oeuvre-collection">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">34</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 묶음집</span>
+                        <span class="list__oeuvre-des">1983-1989, 에칭, 에쿼틴트, 63 × 53.5 cm, 경기도미술관 소장품</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">35</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈개울〉</span>
+                        <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">36</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈이른봄 저녁〉</span>
+                        <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">37</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈아침 노점에서〉</span>
+                        <span class="list__oeuvre-des">1988, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">38</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈세수〉</span>
+                        <span class="list__oeuvre-des">1987, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">39</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈개인택시〉</span>
+                        <span class="list__oeuvre-des">1985, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">40</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈지하철〉</span>
+                        <span class="list__oeuvre-des">1989, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">41</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈대화(터놓고 이야기해서)〉</span>
+                        <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">42</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈과일장수〉</span>
+                        <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">43</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈일터를 찾아서〉</span>
+                        <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">44</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈시속 40km〉</span>
+                        <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 58.5 × 80 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+                <li class="list__oeuvre-normal">
+                    <div class="list__num-wrapper">
+                        <sapn class="list__oeuvre-num">45</sapn>
+                    </div>
+                    <section class="list__oeuvre-wrapper">
+                        <span class="list__oeuvre-name">『사람들』 중 〈문〉</span>
+                        <span class="list__oeuvre-des">1983, 에칭, 에쿼틴트, 80 × 58.5 cm, 유일본 ｜A.P., 작가 소장</span>
+                    </section>
+                </li>
+
+            </ul>
+        </li>
+
+    </ul>
+</main>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-<script src="./../js/common.js"></script>
-<script src="./../js/sample.js"></script>
-<script src="./../js/detail.js"></script>
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="js/common.js"></script>
+<script src="js/sample.js"></script>
+<script src="js/detail.js"></script>
 
 </html>

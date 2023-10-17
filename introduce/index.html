@@ -6,9 +6,10 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./../css/global.css" rel="stylesheet" type="text/css" />
-    <link href="./../css/detail.css" rel="stylesheet" type="text/css" />
-    <link href="./../css/introduce.css" rel="stylesheet" type="text/css" />
+    <base href="./../">
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/detail.css" rel="stylesheet" type="text/css" />
+    <link href="css/introduce.css" rel="stylesheet" type="text/css" />
     <title>전시 소개</title>
 </head>
 
@@ -18,7 +19,7 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="./../css/global.css" rel="stylesheet" type="text/css" />
+        <link href="css/global.css" rel="stylesheet" type="text/css" />
     
         <title>첫번째 페이지</title>
     </head>
@@ -28,85 +29,22 @@
         <header>
             <nav class="header__container">
                 <button type="button" class="header__btn-close e-header__btn-close" disabled>
-                    <img src="./../icons/icon-clear.svg" alt="지도 이동"/>
+                    <img src="icons/icon-clear.svg" alt="지도 이동"/>
                 </button>
                 <h1 class="header__title">전시 소개</h1>
                 <button type="button" class="header__btn-menu e-header__btn-menu" aria-controls="drawer">
-                    <img src="./../icons/icon-menu-hamburger.svg" alt="메뉴"/>
+                    <img src="icons/icon-menu-hamburger.svg" alt="메뉴"/>
                 </button>
             </nav>
-            <aside class="header__drawer-container e-header__drawer-container hidden" aria-hidden="true">
-                <div class="header__drawer">
-                    <div class="header__drawer-header">
-                        <button type="button" class="header__btn-aside-close e-header__btn-aside-close">
-                            <img src="./../icons/icon-clear.svg" alt="메뉴 닫기"/>
-                        </button>
-                    </div>
-                    <ul class="header__drawer-list">
-                        <li class="header__drawer-list-item"><a href="./../introduce/index.html">전시 소개</a></li>
-                        <li class="header__drawer-list-item"><a href="./../map/index.html">전시 동선</a></li>
-                        <li class="header__drawer-list-item"><a href="./../timeline/202310.html">도슨트 시간표</a></li>
-                        <li class="header__drawer-list-item"><a href="./../room/index.html">연구자의 방</a></li>
-                        <li class="header__drawer-list-item"><a href="#">설문조사</a></li>
-                    </ul>
-                    <section class="header__drawer-introduce">
-                        <dl>
-                            <div>
-                                <dt class="visually-hidden">주최</dt>
-                                <dd class="header__introduce-host">경기도미술관</dd>
-                            </div>
-                            <div>
-                                <dt class="visually-hidden">주소</dt>
-                                <dd class="header__introduce-address">15385 경기도 안산시 단원구 동산로 268</dd>
-                            </div>
-                            <div>
-                                <dt>관람시간</dt>
-                                <dd>오전 10시 ~ 오후 6시</dd>
-                            </div>
-                            <div>
-                                <dt>관람종료</dt>
-                                <dd>한 시간 전까지 입장</dd>
-                            </div>
-                            <div>
-                                <dt>휴관일</dt>
-                                <dd>매주 월요일 (1월 1일과 설날, 추석 당일)</dd>
-                            </div>
-                            <div>
-                                <dt>관람료</dt>
-                                <dd>무료</dd>
-                            </div>
-                            <div class="header__cs-container">
-                                <dt class="header__cs-title">관람문의</dt>
-                                <dd class="header__cs-description">
-                                    T. +82 31 481 7000
-                                </dd>
-                                <dd class="header__cs-description">
-                                    F. +82 31 481 7053
-                                </dd>
-                            </div>
-                        </dl>
-                        <div class="header__direct-links">
-                            <a href="https://gmoma.ggcf.kr/" target="_blank" aria-label="경기도미술관 바로가기">
-                                <img src="./../icons/icon-gmoma.svg" alt="경기도미술관"/>
-                            </a>
-                            <a href="https://www.instagram.com/gyeonggimoma/" target="_blank" aria-label="인스타그램 바로가기">
-                                <img src="./../icons/icon-instagram.svg" alt="인스타그램"/>
-                            </a>
-                            <a href="https://www.facebook.com/ggmoma/" target="_blank" aria-label="페이스북 바로가기">
-                                <img src="./../icons/icon-facebook.svg" alt="페이스북"/>
-                            </a>
-                        </div>
-                    </section>
-                </div>
-    
+            <aside class="header__drawer-container e-header__drawer-container aside-hidden" aria-hidden="true">
             </aside>
         </header>
     <main>
         
         <div class="introduce__wrapper">
             <div class="artboard">
-                <img class="int__bg-pink" src="./../images/bg-ground.svg">
-                <img class="int__bg-pink2" src="./../images/bg-ground.svg">
+                <img class="int__bg-pink" src="images/bg-ground.svg">
+                <img class="int__bg-pink2" src="images/bg-ground.svg">
             </div>
             <p class="introduce__text">
             경기도미술관은 2023년의 마지막 전시로 《지도와 영토》를 개최합니다. 이번 전시는 한국 현대미술사의 중요한 작가로 기록될 김건희, 김정헌, 공성훈, 민정기, 정재철 5인의 미술관 소장품 7점을 중심에 두고 작가및 유족의 소장품 35점을 더했습니다. 이번 전시는 총 42점의 작품과 3점의 아카이브로 구성됩니다. <br /><br />
@@ -115,17 +53,17 @@
         </p>
     </div>
     <div class="introduce__btn">
-        <a href="./../map/index.html" class="introduce__common-btn">
+        <a href="map/index.html" class="introduce__common-btn">
             <span class="detail__common-btn-text">
                 전시 동선
             </span>
         </a>
-        <a href="./../timeline/202310.html" class="introduce__common-btn">
+        <a href="timeline/202310.html" class="introduce__common-btn">
             <span class="detail__common-btn-text">
                 도슨트 시간표
             </span>
         </a>
-        <a href="./../room/index.html" class="introduce__common-btn">
+        <a href="room/index.html" class="introduce__common-btn">
             <span class="detail__common-btn-text">
                 연구자의 방
             </span>
@@ -138,9 +76,9 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-<script src="./../js/common.js"></script>
-<script src="./../js/sample.js"></script>
-<script src="./../js/detail.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sample.js"></script>
+<script src="js/detail.js"></script>
 
 
 </html>

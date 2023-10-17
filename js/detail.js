@@ -6,7 +6,7 @@ $(() => {
     });
   });
 
-  imagePaginationEvent();
+  E_ImagePagination();
 });
 
 
@@ -14,7 +14,7 @@ $(() => {
  * @description 이미지를 변경하는 클릭 이벤트를 모은 함수
  * @param currentImageIndex 현재 선택된 이미지의 번호
  */
-const imagePaginationEvent = (currentImageIndex = 0) => {
+const E_ImagePagination = (currentImageIndex = 0) => {
   const $prev = $('.e-detail__icon-prev-image');
   const $next = $('.e-detail__icon-next-image');
 
@@ -29,7 +29,7 @@ const imagePaginationEvent = (currentImageIndex = 0) => {
 
       currentIndex = currentIndex === 0 ? 0 : currentIndex - 1;
       imagePagination(currentIndex);
-      imagePaginationEvent(currentIndex)
+      E_ImagePagination(currentIndex)
     });
 
     $next.click(function () {
@@ -37,7 +37,7 @@ const imagePaginationEvent = (currentImageIndex = 0) => {
 
       currentIndex = currentIndex + 1;
       imagePagination(currentIndex);
-      imagePaginationEvent(currentIndex)
+      E_ImagePagination(currentIndex)
     });
   })();
 }
@@ -88,8 +88,8 @@ const changeContent = (currentIndex, images) => {
 
   const content = images[currentIndex];
 
-  $img.attr('src', `./../images/${content.fileName}`);
-  $img.attr('alt', `./../images/${content.title}`);
+  $img.attr('src', `images/${content.fileName}`);
+  $img.attr('alt', `images/${content.title}`);
 
   $title.text(content.title);
   $description.text(content.description);
