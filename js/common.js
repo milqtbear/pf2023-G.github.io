@@ -1,5 +1,3 @@
-// const IMAGES = require( './details/images');
-
 $(function () {
   $('.e-header__btn-close').click(function () {
     location.href = 'map/index.html';
