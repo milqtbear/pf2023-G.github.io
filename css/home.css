@@ -93,3 +93,9 @@
     }
 
 }
+
+@media (max-height : 740px) {
+    .home__eng {
+        height: 28%;
+    }
+}
