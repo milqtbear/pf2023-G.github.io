@@ -344,3 +344,7 @@ main {
     left: 0;
     pointer-events: none;
 }
+
+.annotation {
+    color: var(--_, #B27852);
+}
