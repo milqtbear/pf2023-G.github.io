@@ -36,7 +36,7 @@ letter-spacing: -0.5px;
     padding: 16px 24px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.25px solid var(--_, #AAA);
+    border-bottom: 0.25px solid #AAA;
 }
 
 .map__common_pno {
