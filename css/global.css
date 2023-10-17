@@ -135,6 +135,10 @@ button {
     border: 0;
 }
 
+.aside-hidden {
+    right: -324px;
+}
+
 /* 기본 레이아웃 */
 body {
     width: 100%;
@@ -190,11 +194,13 @@ header {
 }
 
 aside {
-    position: relative;
+    position: absolute;
+    right: 0;
 
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
+    transition: right 0.3s ease-in-out;
 }
 
 .header__drawer {
