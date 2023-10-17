@@ -18,11 +18,11 @@ const T_Aside = () => {
               </button>
           </div>
           <ul class="header__drawer-list">
-              <li class="header__drawer-list-item"><a href="introduce/index.html">전시 소개</a></li>
-              <li class="header__drawer-list-item"><a href="map/index.html">전시 동선</a></li>
-              <li class="header__drawer-list-item"><a href="timeline/202310.html">도슨트 시간표</a></li>
-              <li class="header__drawer-list-item"><a href="room/index.html">연구자의 방</a></li>
-              <li class="header__drawer-list-item"><a href="./index.html">설문조사</a></li>
+          ${ASIDE_CATEGORY.map((category) => {
+            return `
+                <li class="header__drawer-list-item"><a href="${category.link}">${category.title}</a></li>
+              `;
+          })}
           </ul>
           <section class="header__drawer-introduce">
               <dl>
@@ -82,11 +82,38 @@ const T_Aside = () => {
 const E_Aside = () => {
   $('.e-header__btn-menu').click(function () {
     $('.e-header__drawer-container').toggleClass('aside-hidden');
-    $('.header__btn-aside-close').toggleAttribute('aria-hidden', 'false');
+    $('.header__btn-aside-close').attr('aria-hidden', 'false');
   });
 
   $('.e-header__btn-aside-close').click(function () {
     $('.e-header__drawer-container').toggleClass('aside-hidden');
-    $('.header__btn-aside-close').toggleAttribute('aria-hidden', 'true');
+    $('.header__btn-aside-close').attr('aria-hidden', 'true');
   });
 }
+
+const ASIDE_CATEGORY = [
+  {
+    title: '홈',
+    link: './index.html'
+  },
+  {
+    title: '전시 소개',
+    link: 'introduce/index.html'
+  },
+  {
+    title: '전시 동선',
+    link: 'map/index.html'
+  },
+  {
+    title: '도슨트 시간표',
+    link: 'timeline/202310.html'
+  },
+  {
+    title: '연구자의 방',
+    link: 'room/index.html'
+  },
+  {
+    title: '설문조사',
+    link: './index.html'
+  }
+]
