@@ -332,3 +332,15 @@ main {
 .no-padding {
     padding: 0;
 }
+
+.artboard {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

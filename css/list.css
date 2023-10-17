@@ -96,13 +96,13 @@ border-bottom: 1px solid var(--main_bl, #111);
 
 @media (min-width: 600px) {
     .list__painter {
-        font-size: 1.875rem;
-        line-height: 2.3125rem
+        font-size: 1.575rem;
+        line-height: 2.0125rem
     }
 
     .list__oeuvre-num {
-        font-size: 1.375rem;
-    line-height: 1.8125rem;
+        font-size: 1.275rem;
+    line-height: 1.7125rem;
     width: 3rem;
     }
 
