@@ -1,4 +1,10 @@
 
+.home__artboard {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
 .home__bg {
     position: absolute;
     right: 10%;
@@ -89,7 +95,7 @@
 
 }
 
-@media (max-height : 740px) {
+@media (max-height : 740px) and (max-width: 390 px ) {
     .home__eng {
         height: 28%;
     }
