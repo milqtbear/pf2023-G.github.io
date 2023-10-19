@@ -38,6 +38,14 @@ align-self: stretch;
 border-bottom: 1px solid #111;
 }
 
+.list__oeuvre-lst-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-direction: column;
+}
+
+
 .list__oeuvre-collection {
     display: flex;
     width: 100%;
