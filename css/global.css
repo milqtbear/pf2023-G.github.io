@@ -242,7 +242,7 @@ aside {
 
 .header__drawer-list-item {
     width: 100%;
-    padding: 16px 24px;
+    padding: 12px 24px;
 
     font-weight: 600;
     font-size: 1rem;
@@ -353,8 +353,8 @@ main {
 
 .int__bg-pink {
     position: absolute;
-    top: -5%;
-    left: -80%;
+    top: -20%;
+    left: -90%;
     width: 130%;
     z-index: -1;
 }
