@@ -106,10 +106,60 @@ const IMAGES = {
   ],
   'min-jungki': [
     {
+      fileName: 'mjk-10.jpg',
+      title: '『사람들』 묶음집 중 〈개울〉',
+      description: '1989, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-11.jpg',
+      title: '『사람들』 묶음집 중 〈이른봄 저녁〉',
+      description: '1989, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
       fileName: 'mjk-1.jpg',
       title: '『사람들』 묶음집 중 〈아침 노점에서〉',
       description: '1988, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
-    }
+    },
+    {
+      fileName: 'mjk-2.jpg',
+      title: '『사람들』 묶음집 중 〈세수〉',
+      description: '1987, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-3.jpg',
+      title: '『사람들』 묶음집 중 〈개인택시〉',
+      description: '1985, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-4.jpg',
+      title: '『사람들』 묶음집 중 〈지하철〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-5.jpg',
+      title: '『사람들』 묶음집 중 〈대화(터놓고 이야기해서)〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-6.jpg',
+      title: '『사람들』 묶음집 중 〈과일장수〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-7.jpg',
+      title: '『사람들』 묶음집 중 〈일터를 찾아서〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-8.jpg',
+      title: '『사람들』 묶음집 중 〈시속 40km〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
+    {
+      fileName: 'mjk-9.jpg',
+      title: '『사람들』 묶음집 중 〈문〉',
+      description: '1983, 에칭, 에쿼틴트, 63×53.5cm, 경기도미술관 소장품'
+    },
   ],
   'gong-sunghoon': [
     {
