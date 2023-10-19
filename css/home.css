@@ -79,10 +79,15 @@
         right: 5%;
     }
     .home__date {
-        width: 90%;
         position: absolute;
         bottom: 15%;
         left: 5%;
+    }
+    .home__2024 {
+        width: 25%;
+    }
+    .home__locate {
+        width: 35%;
     }
 }
 
@@ -95,8 +100,20 @@
 
 }
 
-@media (max-height : 740px) and (max-width: 390 px ) {
+@media(max-height: 640px) {
+    .home__mapand {
+        width: 63%;
+    }
+    .home__territory {
+        width: 40%;
+    }
+    .home__2024 {
+        width: 30%;
+    }
+    .home__locate {
+        width: 40%;
+    }
     .home__eng {
-        height: 28%;
+        height: 30%;
     }
 }
