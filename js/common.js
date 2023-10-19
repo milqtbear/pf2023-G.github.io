@@ -20,7 +20,7 @@ const T_Aside = () => {
             return `
                 <li class="header__drawer-list-item"><a href="${category.link}">${category.title}</a></li>
               `;
-          })}
+          }).join('')}
           </ul>
           <section class="header__drawer-introduce">
               <dl>
