@@ -130,7 +130,7 @@ const CONTENTS = [
     painter: '김건희',
     dateRange: ['2023-12-05', '2024-01-15'],
     title: '묻힌 시대상의 발굴- <br/> 김건희의 작업실 리서치와 인터뷰를 중심으로',
-    time: '9월 19일 14:30',
+    time: '12월 6일 15:00',
     researcher: {
       name: '김소정',
       job: '월간미술 기자',
